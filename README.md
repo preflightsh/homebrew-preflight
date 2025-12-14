@@ -1,6 +1,6 @@
 # Homebrew Tap for Preflight.sh
 
-This is the official [Homebrew](https://brew.sh) tap for the [Preflight.sh CLI tool](https://github.com/preflightsh/preflight.sh).
+This is the official [Homebrew](https://brew.sh) tap for the [Preflight.sh CLI tool](https://github.com/preflightsh/preflight).
 
 ## Installation
 
@@ -24,4 +24,4 @@ brew upgrade preflight
 ## More Info
 
 - Website: [preflight.sh](https://preflight.sh)
-- Source: [preflightsh/preflight.sh](https://github.com/preflightsh/preflight.sh)
+- Source: [preflightsh/preflight](https://github.com/preflightsh/preflight)
