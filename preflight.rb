@@ -5,20 +5,20 @@
 class Preflight < Formula
   desc "Preflight CLI for launch readiness checks"
   homepage "https://github.com/preflightsh/preflight.sh"
-  version "0.6.1"
+  version "0.6.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/preflightsh/preflight.sh/releases/download/v0.6.1/preflight_0.6.1_darwin_amd64.tar.gz"
-      sha256 "84a4eef244da7c1951d41c869d17c6d0c8867044b85aa035b17a0770ab0e5f63"
+      url "https://github.com/preflightsh/preflight.sh/releases/download/v0.6.2/preflight_0.6.2_darwin_amd64.tar.gz"
+      sha256 "1b920b38cc753eb6faaa17f650859e5d54ae0a0d36f510994376fc5018a0a123"
 
       def install
         bin.install "preflight"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/preflightsh/preflight.sh/releases/download/v0.6.1/preflight_0.6.1_darwin_arm64.tar.gz"
-      sha256 "d502e9fda0d9544ff34d0cf564d45df88e12685c7b5761fd5ba7cb62d1a01247"
+      url "https://github.com/preflightsh/preflight.sh/releases/download/v0.6.2/preflight_0.6.2_darwin_arm64.tar.gz"
+      sha256 "e39d91adcce8975dc71495d04b90eed0c00a0c32ebf0babd5bca6898fca98dbf"
 
       def install
         bin.install "preflight"
@@ -28,15 +28,15 @@ class Preflight < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/preflightsh/preflight.sh/releases/download/v0.6.1/preflight_0.6.1_linux_amd64.tar.gz"
-      sha256 "e15fa8959b31a22a563fc15151488194ebdffbe601ec4343db71aace8592dadf"
+      url "https://github.com/preflightsh/preflight.sh/releases/download/v0.6.2/preflight_0.6.2_linux_amd64.tar.gz"
+      sha256 "9c05684ba0338959dec2593e94e1cad3b020944823e8bd09c9cbcc5108a7482c"
       def install
         bin.install "preflight"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/preflightsh/preflight.sh/releases/download/v0.6.1/preflight_0.6.1_linux_arm64.tar.gz"
-      sha256 "34b886f533b27d118fef8a64d1000ce85b45607e7f06af5e34a6a026f924b1a9"
+      url "https://github.com/preflightsh/preflight.sh/releases/download/v0.6.2/preflight_0.6.2_linux_arm64.tar.gz"
+      sha256 "f9fcd49fe56c27df798a4ae7c5a8e97a464159ef8a74754e4f2927ea3a28e544"
       def install
         bin.install "preflight"
       end
