@@ -10,7 +10,7 @@ class Preflight < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/preflightsh/preflight/releases/download/v0.13.0/preflight_0.13.0_darwin_amd64.tar.gz"
-      sha256 "b14118535068c66b1875fd9b8538cc9c00daf68e385b44d1e35e7d823a93bb20"
+      sha256 "6395a420d275f9dabcb38d1b8eaf822f27a8a0db003ad47c1f6892db6deb71b9"
 
       define_method(:install) do
         bin.install "preflight"
@@ -18,7 +18,7 @@ class Preflight < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/preflightsh/preflight/releases/download/v0.13.0/preflight_0.13.0_darwin_arm64.tar.gz"
-      sha256 "80b9d180c372cc00da106192d5521c649d8a545abfc5f30b54358bbddf16930d"
+      sha256 "67a4d2cf996fb5193f432662828a097e0999db56afc2854513ef8e4141fd91f4"
 
       define_method(:install) do
         bin.install "preflight"
@@ -29,14 +29,14 @@ class Preflight < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/preflightsh/preflight/releases/download/v0.13.0/preflight_0.13.0_linux_amd64.tar.gz"
-      sha256 "3a6a67f8c963ad28b890aea83861e8a77122e37f88b6f92024ead4e9d9a95fb9"
+      sha256 "a6ec5a1bf7cd68f434a2fbdbe29decec780403e7ba3d4effd6c77cca60f2d33b"
       define_method(:install) do
         bin.install "preflight"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/preflightsh/preflight/releases/download/v0.13.0/preflight_0.13.0_linux_arm64.tar.gz"
-      sha256 "5e069fb7459e355734c714b8171d0df8245f04ce42036d87e65396f25e14889b"
+      sha256 "3be43db2cc3f93b19005587f99b2c30b2b5bd7cf835004e63848259f6aaf2f4d"
       define_method(:install) do
         bin.install "preflight"
       end
